@@ -14,6 +14,7 @@ import Coordinators from "./Pages/Coordinators";
 import Booking from "./Pages/Bookings";
 import Chatroom from "./Pages/Chatroom";
 import Feedback from "./Pages/Feedback";
+import Scheduling from "./Pages/Scheduling";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
         <Route path="/" element={<Booking />} />
         <Route path="/" element={<Chatroom />} />
         <Route path="/" element={<Feedback />} />
-       
+        <Route path="/" element={<Scheduling />} />
 
       </Routes>
     </Router>
