@@ -1,15 +1,88 @@
 .home-page{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(154, 237, 243);
+    min-height: 100vh;
 }
 
-.custom-Navbar{
-    background-color: #A8E4F2;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.custom-navbar{
+    background-color: #060f49;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: 90px;
+    
 }
 
+.custom-navbar .btn,
+.custom-navbar .navbar-brand{
+    color: white;
+    font-size:large;
+    font-weight: 500;
+}
+
+.custom-navbar .btn-outline-secondary:hover{
+    background-color: aliceblue;
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.hero-bar{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.hero-bar h2{
+    color: black;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+
+.hero-bar p{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: larger;
+    color: black;
+    font-weight: 600;
+}
 .main-content{
     margin-top: 40px;
     margin-bottom: 60px;
 }
 
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.section h4{
+    color: black;
+    margin-bottom: 15px;
+}
+
+.section ul{
+    padding-left: 20px;
+}
+
+.message {
+    margin-top: 40px;
+}
+
+.closing{
+    margin-top: 30px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: rgb(154, 237, 243);
+}
