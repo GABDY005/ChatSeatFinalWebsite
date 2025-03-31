@@ -23,9 +23,7 @@ function Home() {
 
             <div className="hero-bar text-center">
                 <h2>Connecting Communities One Conversation at a Time</h2>
-                
             </div>
-
             <h4 className="heading">Welcome to Chat Seats - where every voice matters.</h4>
 
             <div className="container main-content">
@@ -66,14 +64,8 @@ function Home() {
 
             </div>
         </div>
-        <footer className="footer">
-            
-
-        </footer>
-
+        <footer className="footer"></footer>
         </div>
-
-        
         </>
     );
     
