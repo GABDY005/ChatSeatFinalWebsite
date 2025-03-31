@@ -3,34 +3,38 @@
     --accent-blue: #A8E4F2;
 }
 
-body{
+html, body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--accent-blue);
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
+    align-items: center; 
+    height: auto;
+    width: auto;
 }
 
-.login-page{
-    background-color: var(--accent-blue);
+.signup-page{
     min-height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
 }
+.signup-box{
+    
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-.login-box h1{
-    background-color: var(--accent-blue);
+.signup-box h2{
     color: var(--primary-blue);
     font-weight: bold;
-    font-size: 40px; ;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -38,16 +42,25 @@ body{
 label{
     font-weight: bold;
     color: var(--primary-blue);
+    display: block;
+    margin-bottom: 6px;
 }
 
+input[type="text"],
+input[type="tel"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+select{
     width: 100%;
     padding: 10px;
     margin-top: 6px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1pz solid #ccc;
     border-radius: 5px;
+}
+
+select{
+    padding: 10px;
 }
 
 button{
@@ -65,12 +78,12 @@ button:hover{
     background-color: #002b5c;
 }
 
-.error-message {
+.error-message{
     color: red;
     font-size: 0.9rem;
     text-align: center;
     margin-top: 15px;
-  }
+}
 
 .back-link{
     display: block;
@@ -84,3 +97,14 @@ button:hover{
 .back-link:hover{
     text-decoration: underline;
 }
+
+.form-row div{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .signup-box {
+      padding: 20px;
+    }
+  }
+

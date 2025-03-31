@@ -1,10 +1,38 @@
-
+import React from "react";
+import {Link} from 'react-router-dom';
+import "./Dashboard.css";
 
 
 
 function Dashboard() {
     return(
-        <div className = "container mt-5 mb-5">
+        <>
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col-md-3 sidebar">
+                    <div className="nav-links">
+                        <Link to="/Coordinator">Coordinator</Link>
+                        <Link to="/Listener">Listener</Link>
+                        <Link to="/Scheduling">Book Your Slot</Link>
+                        <Link to="/Chatroom">Chat Room</Link>
+                        <Link to="/About">About Us</Link>
+                        <Link to="/Feedback">Feedback</Link>
+                        <Link to="/Help">Help</Link>
+                    </div>
+
+
+
+
+
+                    <div className="bottom-links">
+                        <Link to="/login" className="logout-btn">Logout</Link>
+                    </div>
+                </div>
+        
+        
+
+        <div className = "col-md-9 main-content">
+            <div className="text-center">
             <h1 className="text-primary mb-4">Welcome to "Chat Seat"</h1>
 
                     <p>
@@ -65,6 +93,10 @@ function Dashboard() {
                     <p>Warm Regards,</p>
                     <p><strong>Tricia and Noel</strong></p>
         </div>
+        </div>
+        </div>
+        </div>
+        </>
     );
     
 }

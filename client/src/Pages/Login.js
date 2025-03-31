@@ -7,7 +7,7 @@ import "./Login.css";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [errorMsg, setErrorMsg] = useState("");
+    const [error, setError] = useState("");
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
@@ -18,11 +18,10 @@ function Login() {
     const validPassword = "ChatSeat";
 
     if (email === validEmail && password === validPassword) {
-        errorMsg.style.display = "none";
-        alert("Login successful!");
+        setError("");
         navigate("/Dashboard");
     } else {
-        setErrorMsg("Invalid email or password");
+        setError("Invalid email or password");
     }
 };
 
@@ -41,7 +40,7 @@ function Login() {
                     <input type="password" id="password" name="password" placeholder="Enter Password" required
                     value={password} onChange={(e) => setPassword(e.target.value)} />
 
-                    {errorMsg && <div className="alert alert-danger text-center">{errorMsg}</div>}
+                    {error && <div className="error-message">{error}</div>}
 
                     <button type="submit">Submit</button>                
                 </form>

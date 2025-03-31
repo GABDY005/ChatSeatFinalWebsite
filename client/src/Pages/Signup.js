@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {useNavigate} from "react-router-dom";
+import "./Signup.css";
 
 
 function Signup() {
@@ -25,7 +26,7 @@ function Signup() {
         e.preventDefault();
 
         if (!form.firstName || !form.lastName || !form.phoneNo || !form.Address || !form.Role || !form.email || !form.username || !form.password) {
-            setError("Please fill all the fieldn to signup!");
+            setError("Please fill all the field to signup!");
             return;
         } console.log("Form Submitted:", form);
         alert("You successfully created the account!");
@@ -54,7 +55,7 @@ function Signup() {
                     </div>
                     
                         <label htmlFor="phoneNo">Phone Number</label>
-                        <input type="text" id="phoneNo" name="phoneNo" value={form.phoneNo} onChange={handleChange} required />
+                        <input type="tel" id="phoneNo" name="phoneNo" value={form.phoneNo} onChange={handleChange} required />
                     
                     
                         <label htmlFor="address">Address</label>
